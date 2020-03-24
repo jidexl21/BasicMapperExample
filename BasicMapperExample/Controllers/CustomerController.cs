@@ -22,6 +22,7 @@ namespace BasicMapperExample.Controllers
         // POST api/customer
         public void Post([FromBody] CustomerInputModel value)
         {
+            //Example of mapping fields fields with only similar fieldnames will be mapped
             Customer c =  mapper.MapFields<Customer>(value);
 
         }
